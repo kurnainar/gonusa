@@ -12,10 +12,6 @@
 			$this -> db -> from($this -> v_realisasi);
 			$query = $this -> db -> get();
 			
-			echo "<pre>";
-			echo $this -> db -> last_query();
-			echo "</pre>";
-			
 			return $query -> result_array();
         }
 
